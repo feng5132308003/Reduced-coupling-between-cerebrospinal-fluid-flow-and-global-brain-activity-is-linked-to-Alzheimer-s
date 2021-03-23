@@ -21,8 +21,12 @@ clear
 
 load('mats/figure1_curve.mat','cro_r_csf_gsl2_FT_test_pet','cro_r_csf_gsl3_FT_test_pet');
 load('mats/interval.mat');
+cro_r_csf_gsl2_FT_test_pet(:,18)=[];
+% discard the 18th session out of the 159 sessions, due to this session has no longitudinal MMSE 
+cro_r_csf_gsl3_FT_test_pet(:,18)=[];
 
-pd_beh_tmp1=readtable('test_lmm_fig3_4_new.xlsx','Sheet','Sheet1');
+%pd_beh_tmp1=readtable('test_lmm_fig3_4_new.xlsx','Sheet','Sheet1');
+pd_beh_tmp1=readtable('data_figs.xlsx','Sheet','figs5');% some info used in that sheet
 
 pd_beh_tmp2=double(string(table2cell(pd_beh_tmp1(:,[5]))));
 dc=pd_beh_tmp2(:,1);

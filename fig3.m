@@ -2,7 +2,8 @@
 %% note: please use the R code for the LMM adjustment and then update the p-values
 %%
 clear
-pd_beh_tmp1=readtable('test_lmm_fig3_4_new.xlsx','Sheet','Sheet1');
+% pd_beh_tmp1=readtable('test_lmm_fig3_4_new.xlsx','Sheet','Sheet1');
+pd_beh_tmp1=readtable('data_figs.xlsx','Sheet','fig3');
 
 pd_beh_tmp2=double(string(table2cell(pd_beh_tmp1(:,[5 6 7 10 11 12]))));
 

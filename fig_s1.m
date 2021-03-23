@@ -2,7 +2,9 @@
 %% note: please use the R code for the LMM adjustment and then update the p-values
 
 clear
-pd_beh_tmp1=readtable('test_lmm_augmented_new.xlsx','Sheet','Sheet1');
+%pd_beh_tmp1=readtable('test_lmm_augmented_new.xlsx','Sheet','Sheet1');
+pd_beh_tmp1=readtable('data_figs.xlsx','Sheet','figs1');
+
 pd_beh_tmp2=double(string(table2cell(pd_beh_tmp1(:,[7 8 10]))));
 
 cp=pd_beh_tmp2(:,3); % coupling, age& gender adjusted
@@ -70,7 +72,9 @@ xticks([1 2 3]),title(['r=',num2str(r)])
 
 %% 
 clear
-pd_beh_tmp1=readtable('test_lmm_augmented_new.xlsx','Sheet','Sheet1');
+%pd_beh_tmp1=readtable('test_lmm_augmented_new.xlsx','Sheet','Sheet1');
+pd_beh_tmp1=readtable('data_figs.xlsx','Sheet','figs1');
+
 pd_beh_tmp2=double(string(table2cell(pd_beh_tmp1(:,[4 5 6 8]))));
 
 age=pd_beh_tmp2(:,2);

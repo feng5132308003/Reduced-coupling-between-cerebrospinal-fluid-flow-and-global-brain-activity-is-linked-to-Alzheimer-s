@@ -3,7 +3,8 @@
 clear
 
 %%% load the table including the coupling, age, gender,diease condition, apoe data
-pd_beh_tmp1=readtable('test_lmm_new.xlsx','Sheet','Sheet1');
+%pd_beh_tmp1=readtable('test_lmm_new.xlsx','Sheet','Sheet1');
+pd_beh_tmp1=readtable('data_figs.xlsx','Sheet','fig2');
 
 pd_beh_tmp2=double(string(table2cell(pd_beh_tmp1(:,[7 8 10]))));
 cp=pd_beh_tmp2(:,3);
@@ -74,7 +75,8 @@ xticks([1 2 3])
 %%
 
 clear
-pd_beh_tmp1=readtable('test_lmm_new.xlsx','Sheet','Sheet1');
+%pd_beh_tmp1=readtable('test_lmm_new.xlsx','Sheet','Sheet1');
+pd_beh_tmp1=readtable('data_figs.xlsx','Sheet','fig2');
 
 pd_beh_tmp2=double(string(table2cell(pd_beh_tmp1(:,[4 5 6 8]))));
 

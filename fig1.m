@@ -1,6 +1,6 @@
 %% figure 1B
 clear
-load('mats/bold_csf_tmp.mat','bold_tmp','csf_tmp')
+load('mats/bold_csf_tmp.mat','bold_tmp','csf_tmp');%csf_tmp=csf_tmp';
 figure('color','w','position',[100 200 2000 500]),
 yyaxis left,
 plot(1:130,bold_tmp,'o-','MarkerFaceColor','b','MarkerSize',3,'LineWidth',2),
@@ -9,7 +9,8 @@ yyaxis right,
 plot(1:130,csf_tmp-1,'o-','MarkerFaceColor','r','MarkerSize',3,'LineWidth',2),
 ylim([-1 0.5]),legend('gsl','csf')
 %% figure 1C
-
+%Note: please download the "jbfill" function forShade area between two curves，from：
+%https://www.mathworks.com/matlabcentral/fileexchange/13188-shade-area-between-two-curves
 
 clear
 idx_158=setdiff(1:159,18);% discard the 18th session out of the 159 sessions, due to this session has no longitudinal MMSE 

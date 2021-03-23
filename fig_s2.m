@@ -2,7 +2,8 @@
 %% note: please use the R code for the LMM adjustment and then update the p-values
 
 clear
-pd_beh_tmp1=readtable('test_lmm_new_new.xlsx','Sheet','Sheet1');
+%pd_beh_tmp1=readtable('test_lmm_new_new.xlsx','Sheet','Sheet1');
+pd_beh_tmp1=readtable('data_figs.xlsx','Sheet','figs2');
 
 pd_beh_tmp2=double(string(table2cell(pd_beh_tmp1(:,[6 7 8 9 12 13]))));
 age=pd_beh_tmp2(:,1);
