@@ -13,6 +13,6 @@
  
 Updates: the summarized data used in the above scripts have been uploaded. According to the ADNI data use policy, we here did not share the identificable ID for each subject, but we share simulated ID in our excel file.
 
-Please send feedback to fzh21@psu.edu.
+Please send feedback to Feng Han (fzh21@psu.edu).
  
  (03/24/2020)
