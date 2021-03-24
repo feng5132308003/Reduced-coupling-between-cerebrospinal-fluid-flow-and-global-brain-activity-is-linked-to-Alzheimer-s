@@ -13,7 +13,7 @@ dc=pd_beh_tmp2(:,3);
 pd_beh_tmp3=(string(table2cell(pd_beh_tmp1(:,[2]))));
 pd_beh_tmp4=(string(table2cell(pd_beh_tmp1(:,[3]))));
 for li=1:length(cp)
-    subj158{li}=[pd_beh_tmp3{li}(2:5),'/',pd_beh_tmp4{li}];
+    subj158{li}=[pd_beh_tmp3{li},'/',pd_beh_tmp4{li}];
 end
 %%
 %pd_beh_tmp11=readtable('test_lmm_figureS.xlsx','Sheet','figure_s4');
@@ -25,7 +25,7 @@ pd_beh_tmp33=(string(table2cell(pd_beh_tmp11(:,[1]))));
 pd_beh_tmp44=(string(table2cell(pd_beh_tmp11(:,[2]))));
 
 for li=1:length(pd_beh_tmp33)
-    subj159{li}=[pd_beh_tmp33{li}(2:5),'/',pd_beh_tmp44{li}];
+    subj159{li}=[pd_beh_tmp33{li},'/',pd_beh_tmp44{li}];
 end
 %%
 

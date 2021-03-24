@@ -1,5 +1,5 @@
 %% figure s10: The dependency of the BOLD-CSF coupling on AD risk factors and disease 
-%  conditions with controlling for cortical A5Ã SUVR at baseline. 
+%  conditions with controlling for cortical Abeta SUVR at baseline. 
 %% note: please use the R code for the LMM adjustment and then update the p-values
 
 clear

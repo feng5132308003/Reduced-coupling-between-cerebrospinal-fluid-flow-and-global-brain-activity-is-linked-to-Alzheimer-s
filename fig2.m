@@ -5,6 +5,7 @@ clear
 %%% load the table including the coupling, age, gender,diease condition, apoe data
 %pd_beh_tmp1=readtable('test_lmm_new.xlsx','Sheet','Sheet1');
 pd_beh_tmp1=readtable('data_figs.xlsx','Sheet','fig2');
+% Note: according to the ADNI data use policy, we use the simulated ID instead of the identificable ID. 
 
 pd_beh_tmp2=double(string(table2cell(pd_beh_tmp1(:,[7 8 10]))));
 cp=pd_beh_tmp2(:,3);

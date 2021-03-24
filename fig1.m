@@ -11,7 +11,7 @@ ylim([-1 0.5]),legend('gsl','csf')
 %% figure 1C
 %Note: please download the "jbfill" function forShade area between two curves，from：
 %https://www.mathworks.com/matlabcentral/fileexchange/13188-shade-area-between-two-curves
-
+%  note: TR=3s; 
 clear
 idx_158=setdiff(1:159,18);% discard the 18th session out of the 159 sessions, due to this session has no longitudinal MMSE 
 
